@@ -1,0 +1,17 @@
+<admissions>
+   <student sr="1">
+    <serial_no>23</serial_no>
+    <name>John Carter</name>
+    <admission_Date>25/12/2015</admission_Date>
+   </student>
+   <student sr="2">
+    <serial_no>29</serial_no>
+    <name>Bob Marshal</name>
+    <admission_Date>13/01/1999</admission_Date>
+   </student>
+   <student sr="3">
+    <serial_no>35</serial_no>
+    <name>Clark Kent</name>
+    <admission_Date>17/06/2005</admission_Date>
+   </student>
+</admissions>
