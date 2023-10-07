@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Input Form</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required>
+        <button type="button" onclick="displayName()">Submit</button>
+    </form>
+
+    <h2>Your Name:</h2>
+    <p id="displayedName"></p>
+
+    <script>
+        function displayName() {
+            // Get the value entered in the input field
+            var nameInput = document.getElementById('name').value;
+
+            // Display the name on the page
+            var displayedName = document.getElementById('displayedName');
+            displayedName.textContent = "Hello, " + nameInput + "!";
+        }
+    </script>
+</body>
+</html>
