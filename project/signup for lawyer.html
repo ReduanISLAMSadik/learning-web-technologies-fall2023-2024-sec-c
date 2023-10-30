@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lawyer Sign Up Form</title>
+  <style>
+    /* CSS */
+    form {
+      border: 3px solid #f1f1f1;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    input[type=text], input[type=password], input[type=email], input[type=date], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    a {
+      color: dodgerblue;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    .upload-button {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      color: #ccc;
+      padding: 12px 20px;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    .upload-button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div class="container">
+      <h1>Signup for Lawyer</h1>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter your name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter your email" name="email" required>
+      <label for="gender">Gender:</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="date_of_birth">Date of Birth:</label>
+      <input type="date" placeholder="mm/dd/yyyy" name="date_of_birth" required>
+      <label for="lawyer_reg_id">Lawyer Reg ID:</label>
+      <input type="text" placeholder="Enter your lawyer registration ID" name="lawyer_reg_id" required>
+      <label for="current_court">Current Court:</label>
+      <select name="current_court">
+        <option value="Supreme Court of Bangladesh">Supreme Court of Bangladesh</option>
+        <option value="High Court Division">High Court Division</option>
+        <option value="District Court">District Court</option>
+      </select>
+      <label for="submit_document">Submit Document:</label>
+      <input type="file" name="submit_document" class="upload-button">
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter your password" name="password" required>
+      <label for="re_enter_password">Re-enter Password:</label>
+      <input type="password" placeholder="Re-enter your password" name="re_enter_password" required>
+      <label for="user_type">User Type:</label>
+      <select name="user_type">
+        <option value="lawyer">Lawyer</option>
+        <option value="lawyer">Client</option>
+      </select>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>

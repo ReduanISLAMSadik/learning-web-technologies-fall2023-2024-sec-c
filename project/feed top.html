@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feed Form</title>
+  <style>
+    /* CSS */
+    form {
+      border: 3px solid #f1f1f1;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    input[type=text], textarea, select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type=file] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    a {
+      color: dodgerblue;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <form action="/action_page.php">
+    <div class="container">
+      <h1>Share your feed</h1>
+      <label for="title">Title:</label>
+      <input type="text" placeholder="Enter the title of your feed" name="title" required>
+      <label for="description">Description:</label>
+      <textarea name="description" placeholder="Enter the description of your feed" required></textarea>
+      <label for="photo">Photo:</label>
+      <input type="file" name="photo" required><br>
+      <label for="pdf">PDF:</label>
+      <input type="file" name="pdf" required>
+      <button type="submit">Post</button>
+    </div>
+  </form>
+</body>
+</html>
